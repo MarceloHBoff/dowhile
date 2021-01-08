@@ -5,9 +5,12 @@
   "license": "MIT",
   "scripts": {
     "graphql": "ts-node-dev -r tsconfig-paths/register --inspect --ignore-watch node_modules graphql/server.ts",
+    "jwt": "ts-node-dev -r tsconfig-paths/register --inspect --ignore-watch node_modules jwt/server.ts",
+    "kafka": "ts-node-dev -r tsconfig-paths/register --inspect --ignore-watch node_modules kafka/server.ts",
     "build": "tsc"
   },
   "devDependencies": {
+    "@types/jsonwebtoken": "^8.5.0",
     "@types/mongoose": "^5.10.3",
     "@typescript-eslint/eslint-plugin": "^4.11.0",
     "@typescript-eslint/parser": "^4.11.0",
@@ -25,7 +28,10 @@
   "dependencies": {
     "apollo-server": "^2.19.1",
     "class-validator": "^0.12.2",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
     "graphql": "^15.4.0",
+    "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.11.8",
     "reflect-metadata": "^0.1.13",
     "type-graphql": "^1.1.1"
