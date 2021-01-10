@@ -45,6 +45,8 @@ yarn
 yarn jwt
 ```
 
+## <br/>
+
 <h2>🚀 GIT Client</h2>
 
 My first project with Elixir. This is a simple application to get git repos by username
